@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 
 // middlewares express
 app
-    .use(favicon('./chicken.ico'))
+    .use(favicon(__dirname + '/chicken.ico'))
     .use(morgan('dev'))
     .use(bodyParser.json())
 
@@ -18,6 +18,6 @@ app
 sequelize.init()
 
 // Find here the call to all routes
-require('./src/routes/routes')(app)
+require(__dirname + '/src/routes/routes')(app)
 
 app.listen(port, () => console.log(`The app has been started on : http://localhost:${port}`))
