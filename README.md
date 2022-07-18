@@ -1,5 +1,5 @@
 # Chicken_RUN
-Welcome to this project made with love to make run the Chikens :)
+Welcome to this project made with love to make run the Chickens :)
 
 # About the project
 This project is an API REST which handle CRUD methodes (GET / POST / PUT / PATCH / DELETE).
