@@ -1,0 +1,50 @@
+# Get the 2 initial chikens
+GET http://localhost:${PORT}/chiken
+
+# Get the chicken with id:1
+GET http://localhost:${PORT}/chiken/1
+
+# Make run all chikens
+GET http://localhost:${PORT}/chiken/run
+
+# Make run the id:2 chicken
+GET http://localhost:${PORT}/chiken/run/2
+
+# Create and push in db a new chicken
+POST http://localhost:${PORT}/chiken
+
+you also need a json body :
+
+{
+    "name": "Newchicken",
+    "weight": 12,
+    "birthday": "2022-07-20T20:38:53.000Z"
+}
+
+all that 3 information are mandaroty when you create a chicken
+
+# Update the first chicken
+PUT http://localhost:${PORT}/chiken/1
+
+with the json body :
+
+{
+    "name": "Hugo"
+}
+
+# Update the second chicken
+PATCH http://localhost:${PORT}/chiken/2
+
+with the json body :
+
+{
+    "weight": 16
+}
+
+# Delete the first chicken
+DELETE http://localhost:${PORT}/chiken/1
+
+# Delete all remaning chickens
+DELETE http://localhost:${PORT}/chiken
+
+## you are done you can now restart the server ##
