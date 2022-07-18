@@ -28,11 +28,11 @@ You can start the server in two different modes:
 * client
 * developper
 
-To run in client mode run ```npm run start```
+To run in client mode run ```npm run start```<br/>
 To run in dev mod run ```npm run dev```
 
 # Technologies
 This project has been realised with :
-* NodeJS / Express / Sequelize
+* NodeJS / Express / Sequelize (mariaDB)
 * JavaScript 
 
