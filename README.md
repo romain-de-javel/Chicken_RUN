@@ -8,6 +8,7 @@ It also create a mariaDB database which can interect with the API requests.
 # Get Started
 ### Prerequires
 * npm
+* xampp (Appache, MySQL) / phpMyAdmin
 * insomnia (testing part)
 
 ### Installation
@@ -25,7 +26,8 @@ npm install
 ```
 
 ### Usage
-You can start the server in two different modes:
+You must first launch your XAMPP application and make SQL and Appahce run.<br/>
+You can then start the server in two different modes:
 * client mode
 * developper mode
 
@@ -43,22 +45,24 @@ In order to well test you are strongly advised to read the ```tests/tes.txt file
 ### Supported requests
 
 |  REQUEST  |  ROOT  |  ACTION  |
+|  -------  |  ----  |  ------  |
 |  GET  |  /chicken  |  find all chikens in the DB  |   
-|  GET  |  /chicken/:id  |  find a only chicken which hav the id  |   
+|  GET  |  /chicken/:id  |  find a only chicken which hav this id  |   
 |  GET  |  /chicken/run  |  make all chickens take a step  |   
-|  GET  |  /chicken/run/:id  |  make the chicken which hav the id take a step  |  
+|  GET  |  /chicken/run/:id  |  make the chicken which have this id take a step  |  
 |  POST  |  /chicken  |  create and push a new chicken in the db  |  
-|  PUT  |  /chicken/:id  |  update the chicken that has the id  |  
-|  PATCH  |  /chicken/:id  |  update the chicken that has the id  |  
+|  PUT  |  /chicken/:id  |  update the chicken that has this id  |  
+|  PATCH  |  /chicken/:id  |  update the chicken that has this id  |  
 |  DELETE  |  /chicken |  delete all chickens form the db  |  
-|  DELETE  |  /chicken/:id |  delete the chiken that has the id  |
+|  DELETE  |  /chicken/:id |  delete the chiken that has this id  |
 
 ### Error Handling
-|  Status code  |  meaning  | 
+|  Status code  |  meaning  |
+|  -----------  |  -------  |
 |  200  |  the request succed  |
-|  400  |  the user entered a bad request  |
-|  404  |  the ressource needed does not exist  |
-|  500  |  internal server issue  | 
+|  400  |  the user sent a bad request  |
+|  404  |  the requested resource does not exist  |
+|  500  |  internal server issues  | 
 
 # Technologies
 This project has been realised with :
