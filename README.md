@@ -48,6 +48,7 @@ In order to well test you are strongly advised to read the ```tests/tests.txt```
 |  -------  |  ----  |  ------  |
 |  GET  |  /chicken  |  find all chikens in the DB  |   
 |  GET  |  /chicken/:id  |  find a only chicken which hav this id  |   
+|  GET  |  /chicken?name=${name}  |  find chickens by names  |   
 |  GET  |  /chicken/run  |  make all chickens take a step  |   
 |  GET  |  /chicken/run/:id  |  make the chicken which have this id take a step  |  
 |  POST  |  /chicken  |  create and push a new chicken in the db  |  

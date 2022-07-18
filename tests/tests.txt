@@ -4,6 +4,10 @@ GET http://localhost:${PORT}/chiken
 # Get the chicken with id:1
 GET http://localhost:${PORT}/chiken/1
 
+# Get the first chicken by his name
+GET http://localhost:${PORT}/chiken?name=tony
+
+
 # Make run all chikens
 GET http://localhost:${PORT}/chiken/run
 
