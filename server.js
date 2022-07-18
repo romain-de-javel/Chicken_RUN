@@ -21,5 +21,7 @@ sequelize.init()
 require('./src/routes/getAllChickens')(app)
 require('./src/routes/getOneChicken')(app)
 require('./src/routes/postChicken')(app)
+require('./src/routes/deleteChicken')(app)
+require('./src/routes/putChicken')(app)
 
 app.listen(port, () => console.log(`The app has been started on : http://localhost:${port}`))

@@ -7,22 +7,33 @@ module.exports = (sequelize, DataTypes) => {
         },
         name: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                isAlpha : {message: 'name must be a string whith only letters'},
+                notNull: {message: 'name is required'}
+            }
         },
         birthday:{
             type: DataTypes.DATE,
         },
         weight:{
-            type: DataTypes.INTEGER,
-            allowNull: false
+            type: DataTypes.DECIMAL,
+            allowNull: false,
+            validate: {
+                isDecimal : {message: 'weight must be a number'},
+                notNull: {message: 'weight is required'}
+            }
         },
         steps:{
-            type: DataTypes.INTEGER,
-            defaultValue: 0
+            type: DataTypes.DECIMAL,
+            defaultValue: 0,
+            validate: {
+                isDecimal : {message: 'steps must be a number'}
+            }
         },
         isRunning:{
             type: DataTypes.BOOLEAN,
-            defaultValue: false
+            defaultValue: false,
         }
     })
 }
