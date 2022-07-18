@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isAlpha : {message: 'name must be a string whith only letters'},
-                notNull: {message: 'name is required'}
+                isAlpha : {msg: 'name must be a string whith only letters'},
+                notNull: {msg: 'name is required'}
             }
         },
         birthday:{
@@ -20,15 +20,15 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DECIMAL,
             allowNull: false,
             validate: {
-                isDecimal : {message: 'weight must be a number'},
-                notNull: {message: 'weight is required'}
+                isDecimal : {msg: 'weight must be a number'},
+                notNull: {msg: 'weight is required'}
             }
         },
         steps:{
             type: DataTypes.DECIMAL,
             defaultValue: 0,
             validate: {
-                isDecimal : {message: 'steps must be a number'}
+                isDecimal : {msg: 'steps must be a number'}
             }
         },
         isRunning:{

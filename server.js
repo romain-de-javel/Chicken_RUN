@@ -14,14 +14,10 @@ app
     .use(morgan('dev'))
     .use(bodyParser.json())
 
-// init the DB
+// init the db
 sequelize.init()
 
-// Find here all routes
-require('./src/routes/getAllChickens')(app)
-require('./src/routes/getOneChicken')(app)
-require('./src/routes/postChicken')(app)
-require('./src/routes/deleteChicken')(app)
-require('./src/routes/putChicken')(app)
+// Find here the call to all routes
+require('./src/routes/routes')(app)
 
 app.listen(port, () => console.log(`The app has been started on : http://localhost:${port}`))
