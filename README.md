@@ -41,6 +41,23 @@ This API is not yet connected to a frontend so you can test it by using the prov
 
 ### Supported requests
 
+|  REQUEST  |  ROOT  |  ACTION  |
+|  GET  |  /chicken  |  find all chikens in the DB  |   
+|  GET  |  /chicken/:id  |  find a only chicken which hav the id  |   
+|  GET  |  /chicken/run  |  make all chickens take a step  |   
+|  GET  |  /chicken/run/:id  |  make the chicken which hav the id take a step  |  
+|  POST  |  /chicken  |  create and push a new chicken in the db  |  
+|  PUT  |  /chicken/:id  |  update the chicken that has the id  |  
+|  PATCH  |  /chicken/:id  |  update the chicken that has the id  |  
+|  DELETE  |  /chicken |  delete all chickens form the db  |  
+|  DELETE  |  /chicken/:id |  delete the chiken that has the id  |
+
+### Error Handling
+|  Status code  |  meaning  | 
+|  200  |  the request succed  |
+|  400  |  the user entered a bad request  |
+|  404  |  the ressource needed does not exist  |
+|  500  |  internal server issue  | 
 
 # Technologies
 This project has been realised with :
