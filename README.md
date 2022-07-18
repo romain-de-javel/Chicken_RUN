@@ -26,7 +26,7 @@ npm install
 ```
 
 ### Usage
-You must first launch your XAMPP application and make SQL and Appahce run
+You must first launch your XAMPP application and make SQL and Appahce run.<br/>
 You can then start the server in two different modes:
 * client mode
 * developper mode
