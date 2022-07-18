@@ -8,6 +8,7 @@ It also create a mariaDB database which can interect with the API requests.
 # Get Started
 ### Prerequires
 * npm
+* xampp (Appache, MySQL) / phpMyAdmin
 * insomnia (testing part)
 
 ### Installation
@@ -25,7 +26,8 @@ npm install
 ```
 
 ### Usage
-You can start the server in two different modes:
+You must first launch your XAMPP application and make SQL and Appahce run
+You can then start the server in two different modes:
 * client mode
 * developper mode
 
