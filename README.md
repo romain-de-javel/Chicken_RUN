@@ -36,7 +36,7 @@ To run in dev mod run ```npm run dev```
 
 ### Testing the API
 This API is not yet connected to a frontend so you can test it by using the provided test file with all requests.<br/>
-In order to well test you are strongly advised to read the ```tests/tes.txt file``` and use the requests given in this file
+In order to well test you are strongly advised to read the ```tests/tests.txt``` file and use the requests given in this file
 <br/>You can just :
 1. Run insomnia
 2. Create a mew request HTTP
