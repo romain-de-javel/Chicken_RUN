@@ -1,4 +1,5 @@
 # Chicken_RUN
+Welcome to this project made with love to make run the Chikens :)
 
 # About the project
 This project is an API REST which handle CRUD methodes (GET / POST / PUT / PATCH / DELETE).
@@ -30,6 +31,16 @@ You can start the server in two different modes:
 
 To run in client mode run ```npm run start```<br/>
 To run in dev mod run ```npm run dev```
+
+### Testing the API
+This API is not yet connected to a frontend so you can test it by using the provided test file with all requests.
+You can just :
+1. Run insomnia
+2. Create a mew request HTTP
+3. send the request and look at the result
+
+### Supported requests
+
 
 # Technologies
 This project has been realised with :
