@@ -18,7 +18,7 @@ git clone git@github.com:romain-de-javel/Chicken_RUN.git
 ```
 2. Go into the folder
 ```
-cd Chiken_RUN
+cd Chicken_RUN
 ```
 3.  Install packages
 ```
@@ -32,7 +32,7 @@ You can then start the server in two different modes:
 * developper mode
 
 To run in client mode run ```npm run start```<br/>
-To run in dev mod run ```npm run dev```
+To run in dev mode run ```npm run dev```
 
 ### Testing the API
 This API is not yet connected to a frontend so you can test it by using the provided test file with all requests.<br/>
