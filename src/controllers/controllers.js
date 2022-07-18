@@ -3,7 +3,12 @@ const { ValidationError } = require('sequelize')
 
 // find all chickens
 exports.findAll = (req, res) =>{
-    Chicken.findAll()
+    if (req.query.name){
+        const name = req.query.name
+        return Chicken.findAll({where: {name : name}}).then(chicken => {
+            const ret_message = `The chikens with the name ${name} are here`
+            res.json({ret_message, data: chicken})})
+    }else{ Chicken.findAll()
         .then(chicken => {
             const ret_message = 'All chickens have been found'
             res.json({ret_message, data: chicken})
@@ -12,6 +17,7 @@ exports.findAll = (req, res) =>{
             const ret_message = 'Chickens cannot be find, retry later'
             res.status(500).json({ret_message, data: error})
         })
+    }
 }
 
 // find the chicken with the right id
